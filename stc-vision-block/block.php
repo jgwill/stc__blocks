@@ -3,6 +3,9 @@
 // That is a file that i create to display on the blog the custom block
 //
 //
+
+$vision_value = block_value('vision');
+$vision = str_replace("@STCGoal","",$vision_value);
 ?>
 
 <table>
@@ -14,7 +17,7 @@
 		<img src="http://img.jgwill.com/ico/vision.png" class="stc-viewer-header-icon">
 	</td>
 	<td>
-	<p class="stc-viewer-content"> 	<?php block_field( 'vision' ); ?></p>
+	<p class="stc-viewer-content"> 	<?php echo $vision ?></p>
 	</td>
 
 </tr>
