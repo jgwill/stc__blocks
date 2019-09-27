@@ -33,13 +33,16 @@ $stay_icon = "next-orange.png";
 $getting_worse_icon = "112_DownArrowLong_Orange.ico";
 $unacceptable_icon = "channel-mode-off.ico";
 $mmot_icon = "icons8-yoga-208.png";
+$mmot_plan_icon = "a.png";$mmot_analyze_icon = "orthogonal-view-26.png";
+$mmot_feedback_icon = "feedback-acceptable.svg";
 
+//Acceptable / not
 $acceptability_icon = $unacceptable_icon;
 
 if ($acceptable == "Yes") 
 	$acceptability_icon = $acceptable_icon;
 
-echo "<td><img src=$ico_base/$acceptability_icon>";
+echo "<td><img src=$ico_base/$acceptability_icon> &nbsp;&nbsp;";
 //echo "</td>";
 
 //trend
@@ -52,18 +55,19 @@ echo "<img src=$ico_base/$trend_icon></td>";
 
 echo "</tr>";
 //Analyze
-echo '<tr><td class="stc-viewer-header">Analyze:</td>';
+echo '<tr><td class="stc-viewer-header">Analyze:<br>' ."<img src=$ico_base/$mmot_analyze_icon>".'</td>';
 echo "<td><p>$analyze</p></td>";
 echo "</tr>";
 //Plan
-echo '<tr><td class="stc-viewer-header">Plan:</td>';
+echo '<tr><td class="stc-viewer-header">Plan:<br>' ."<img src=$ico_base/$mmot_plan_icon>". '</td>';
 echo "<td><p>$plan</p></td>";
 echo "</tr>";
 
 
 //Feedback
-echo '<tr><td class="stc-viewer-header">Feedback:</td>';
-echo "<td><p>$plan</p></td>";
+echo '<tr><td class="stc-viewer-header">Feedback:<br>' ."<img src=$ico_base/$mmot_feedback_icon width=24 height=24>". '</td>';
+
+echo "<td><p>$feedback</p></td>";
 echo "</tr>";
 
 
@@ -72,7 +76,7 @@ echo "</tr>";
 
 ?>
 
-</tr></table>
+
 
 
 	</td>
