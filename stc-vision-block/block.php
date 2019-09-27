@@ -38,7 +38,9 @@ $feedback =  block_field( 'mmotfeedback');
 
 echo "-->";
 
-if ($acceptable == "Yes")
+
+
+if ($acceptable == "Yes" || $acceptable == "No")
 {
 //echo "<hr>";
 	//require the php

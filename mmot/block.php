@@ -32,6 +32,10 @@ $feedback =  block_field( 'mmotfeedback');
 //stop getting variable here
 echo "-->";
 
+
+
+
+
 $acceptable_icon = "112_Tick_Green.ico";
 $getting_better_icon = "112_UpArrowLong_Green.ico";
 $stay_icon = "next-orange.png";
