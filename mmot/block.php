@@ -3,7 +3,10 @@
 // That is a file that i create to display on the blog the custom block
 //
 //
-?>
+
+//echo "<hr>HELLO MMOT<hr>";
+
+echo '
 <table>
 
 <tr>
@@ -16,7 +19,7 @@
 <!--	<p class="stc-viewer-content">  -->
 
 <!-- getting variable fix because it print them
-<?php 
+ ';
 $ico_base = "http://img.jgwill.com/ico";
 //Get variable bellow
 $acceptable = block_field( 'mmotacceptable' );
@@ -25,8 +28,10 @@ $analyze = block_field( 'mmotanalyze' );
 $plan =  block_field( 'mmotplan');
 $feedback =  block_field( 'mmotfeedback');
 
+
 //stop getting variable here
 echo "-->";
+
 $acceptable_icon = "112_Tick_Green.ico";
 $getting_better_icon = "112_UpArrowLong_Green.ico";
 $stay_icon = "next-orange.png";
@@ -74,13 +79,10 @@ echo "</tr>";
 
 //mmotthrees, mmotanalyze, mmotplan, mmotfeedback, mmotdiscussion
 
+
+
+
+echo '
+</table>';
+
 ?>
-
-
-
-
-	</td>
-</tr>
-</table>
-
-
