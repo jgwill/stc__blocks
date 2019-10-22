@@ -60,15 +60,19 @@ if ($trend == "Getting worse") $trend_icon = $getting_worse_icon;
 else if ($trend == "Getting better") $trend_icon = $getting_better_icon;
 
 //echo "<td>";
-echo "<img src=$ico_base/$trend_icon></td>";
+$wh = "width=20 height=20";
+$wh = ' style="max-width:48px;max-height:48px"';
+
+echo "<img src=$ico_base/$trend_icon $wh></td>";
+
 
 echo "</tr>";
 //Analyze
-echo '<tr><td class="stc-viewer-header">Analyze:<br>' ."<img src=$ico_base/$mmot_analyze_icon>".'</td>';
+echo '<tr><td class="stc-viewer-header">Analyze:<br>' ."<img src=$ico_base/$mmot_analyze_icon $wh>".'</td>';
 echo "<td><p>$analyze</p></td>";
 echo "</tr>";
 //Plan
-echo '<tr><td class="stc-viewer-header">Plan:<br>' ."<img src=$ico_base/$mmot_plan_icon>". '</td>';
+echo '<tr><td class="stc-viewer-header">Plan:<br>' ."<img src=$ico_base/$mmot_plan_icon $wh>". '</td>';
 echo "<td><p>$plan</p></td>";
 echo "</tr>";
 
