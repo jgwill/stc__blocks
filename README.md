@@ -7,3 +7,8 @@ WP STC/MMot blocks and related
 # Issues
 * Negative MMOT and getting worse do not render the analysis/plan/feedback
 
+# Hierarchical dependency
+
+* Vision Block -> MMOT Block
+
+
